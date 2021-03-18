@@ -1,0 +1,116 @@
+body{
+    font-family: 'Noto Serif TC', serif;
+}
+
+#main {
+    width: 100%;
+    height: 96vh;
+}
+
+.bg-img {
+    width: 100%;
+    height: 100%;
+    background: url('../bg.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-img .logo-img {
+    width: 300px;
+    height: 300px;
+    transform: translateX(-50px);
+    animation: logoDisplay 3s;
+}
+
+form {
+    animation: contentDisplay 4s;
+}
+
+form .btn {
+    margin-top: 1rem;
+}
+
+.container {
+    width: 100%;
+    height: 96vh;
+}
+
+h2 {
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #575ed8;
+}
+
+.card-body {
+    width: 100%;
+    height: 75vh;
+    overflow: auto;     /* scroll bar */
+    background: #fff;
+}
+
+#output p {
+    padding: 14px 0px;
+    margin: 0 20px;
+    color: #555;
+}
+
+#feedback p {
+    color: #aaa;
+    padding: 14px 0px;
+    margin: 0 20px;
+}
+
+#output strong {
+    color: #575ed8;
+}
+
+label {
+    box-sizing: border-box;
+    display: block;
+    padding: 10px 20px;
+}
+
+input {
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: #eee;
+    border: 0;
+    display: block;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    font-family: Nunito;
+    font-size: 16px;
+}
+
+button {
+    background: #575ed8;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 0 0 2px 2px;
+}
+
+@keyframes logoDisplay {
+    0%, 25% {
+        opacity: 0;
+    }
+    90%, 100% {
+        opacity: 1;
+    }
+}
+
+@keyframes contentDisplay {
+    0%, 25% {
+        transform: translateX(-150px);
+        opacity: 0;
+    }
+    90%, 100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
